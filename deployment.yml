@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-demo-deployment
+spec:
+  selector:
+    matchLabels:
+      app: angular-demo-pod
+  template:
+    metadata:
+      labels:
+        app: angular-demo-pod
+    spec:
+      containers:
+      - name: angular-demo-container
+        image: contenedorregistrodesarrollo.azurecr.io/angular-demo:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
