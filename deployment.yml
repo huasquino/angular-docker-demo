@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: angular-demo-container
-        image: contenedorregistrodesarrollo.azurecr.io/angular-demo:v1
+        image: contenedorregistrodesarrollo.azurecr.io/huasquino/angular-docker-demo:latest
         resources:
           limits:
             memory: "128Mi"
