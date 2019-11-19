@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: angular-demo-container
-        image: contenedorregistrodesarrollo.azurecr.io/angular-demo:#{Build.BuildId}#
+        image: contenedorregistrodesarrollo.azurecr.io/angular-demo:latest
         resources:
           limits:
             memory: "128Mi"
