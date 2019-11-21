@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: contenedorregistrodesarrollo.azurecr.io/angularaks
-  tag: {{ .web.image.tag }}
+  tag: 
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
