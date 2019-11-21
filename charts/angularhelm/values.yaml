@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
+  repository: contenedorregistrodesarrollo.azurecr.io/angularaks
+  tag: $(Build.BuildId)
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
